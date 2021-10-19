@@ -10,9 +10,9 @@ CREATE TABLE movie_names (
 
 CREATE TABLE reviews (
     id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    movie_id int NOT NULL, 
+    movie_id INT, 
     review TEXT,
-    FOREIGN KEY(movie_id)
+    FOREIGN KEY (movie_id)
     REFERENCES movie_names(id)
     ON DELETE SET NULL
 );
